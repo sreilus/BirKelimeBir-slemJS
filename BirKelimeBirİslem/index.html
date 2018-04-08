@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Bir Kelime Bir İşlem</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+    <meta name="author" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head> 
+
+  <body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png"/>
+            <img class="profile-image img-responsive pull-right" src="assets/images/profile2.png"/>
+            <div class="profile-content pull-left">
+                <h1 class="name">Murat Şahin</h1>
+                <h2 class="desc">152805005</h2>   
+                <ul class="social list-inline">
+
+
+                    <li><a href="https://www.linkedin.com/in/vegangineer/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/vegangineer"><i class="fa fa-github-alt"></i></a></li>                  
+
+                </ul> 
+            </div><!--//profile-->
+            
+            <div class="profile-content pull-right">
+                <h1 class="name">Muhammed Akvardar</h1>
+                <h2 class="desc">152805015</h2>   
+                <ul class="social list-inline">
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github-alt"></i></a></li>                  
+
+                </ul> 
+            </div><!--//profile-->
+
+
+
+           <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+       </div><!--//container-->
+   </header><!--//header-->
+
+   <div class="container sections-wrapper">
+    <div class="row">
+        <div class="primary col-md-12 col-sm-12 col-xs-12">
+            <section class="about section">
+                <div class="section-inner">
+                    <h2 class="heading"><a href="birislem.html">Bir Kelime Bir İşlem</a></h2>
+                    <div class="content">
+                        <center>
+                            <p>Bir Kelime Bir İşlem Nedir?</p>  
+                            <hr />
+                            <p>Aşağıdaki 5 rakam, rastgele oluşturuldu.</p>  
+                            <p id="rakams"></p>
+                            <input onclick="rastgeleRakamlarUret()" value="Rakamları beğenmedim." type="button">
+                            <hr/>
+                            <p>Aşağıdaki 10'un katı olan sayı rastgele oluşturuldu.</p> 
+                            <p id="onunKatiSayi"></p>
+                            <input onclick="onunKatiSayiUret()" value="2 Basamaklı sayıyı tekrardan üret." type="button">
+                            <hr />
+                            <p>Her şey hazırsa geriye ulaşmamız gereken 3 basamaklı sayıyı kontrol etmek kaldı.</p> 
+                            <p id="ucBasamakliSayi"></p>
+                            <input onclick="ucBasamakliSayiUret()" value="Ulaşmamız gereken sayıyı değiştir." type="button">
+                            <hr />
+                            <p> </p>
+                            <p>Eğer tüm sayılardan memnunsan, kağıdı ve kalemi hazırladıysan, süreyi başlat ve kendini dene!</p>
+
+                            <button onclick="Kronometre.baslat()">Başlat</button> /
+                            <button onclick="Kronometre.duraklat()">Duraklat</button> /
+                            <button onclick="Kronometre.bitir()">Bitir</button>
+                            <hr />
+                            <div id="sayac"></div>
+                            <p>Uğraşmak istemiyor musun? <br>Sistemin bu problemi çözmek için bulduğu optimum algoritmayı analiz et!</p>  
+                            <input onclick="bastir()" value="Sayıların Tamamını Güncelle/Görüntüle" type="button">  
+                            <p id="tamamınıGoruntuleGuncelle"></p>
+                            <input onclick="algoritmaCozsun()" value="Artık Algoritma Çözsün!" type="button">  
+                            <p id="islemMetinleri"></p>
+                        </center>  
+</p>
+
+</div><!--//content-->
+</div><!--//section-inner-->                 
+</section><!--//section-->
+
+<div class="secondary col-md-12 col-sm-12 col-xs-12">
+   <aside class="info aside section">
+    <div class="section-inner">
+        <h2 class="heading sr-only">Basic Information</h2>
+        <div class="content">
+            <ul class="list-unstyled">
+                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Turgutlu Manisa, TR</li>
+                <li><i class="fa fa-envelope-o"></i><span class="sr-only">E Posta:</span><a href="vegangineer@gmail.com">vegangineer@gmail.com</a></li>
+                <li><i class="fa fa-envelope-o"></i><span class="sr-only">E Posta:</span><a href="muhammedakvardar@gmail.com">muhammedakvardar@gmail.com</a></li>
+
+
+                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li>
+            </ul>
+        </div><!--//content-->  
+    </div><!--//section-inner-->                 
+</aside><!--//aside-->
+
+</div><!--//secondary-->    
+</div><!--//row-->
+</div><!--//masonry-->
+
+<footer class="footer">
+    <div class="container text-centeßr">
+        <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+    </div><!--//container-->
+</footer><!--//footer-->
+
+<!-- Javascript      -->  
+
+<script type="text/javascript" src="assets/plugins/islem.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+<!-- github activity plugin -->
+<script type="text/javascript" src="assets/js/zamanlama.js"></script> 
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="assets/js/main.js"></script>     
+<script type="text/javascript" src="assets/js/islemler.js"></script> 
+</body>
+</html> 
+
